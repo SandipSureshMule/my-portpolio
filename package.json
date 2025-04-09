@@ -4,18 +4,17 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://SandipSureshMule.github.io/my-portpolio",
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "test": "jest --watchAll",
-    "lint": "expo lint",
-    "build": "expo build:web",
-    "predeploy": "expo export:web",
-    "deploy": "gh-pages -d dist"
-  },
+"scripts": {
+  "start": "expo start",
+  "android": "expo start --android",
+  "ios": "expo start --ios",
+  "web": "expo start --web",
+  "build": "npx expo export:web",
+  "deploy": "npx expo export:web && npx gh-pages -d dist"
+},
+
+  
+
   "jest": {
     "preset": "jest-expo"
   },
